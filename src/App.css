@@ -1,1 +1,52 @@
 /* Other rules */
+/*===================NAV===========================*/
+.nav {
+  height: 60px;
+  background-color: white;
+  width: 80%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.logo > img {
+  width: 100px;
+}
+.search > input {
+  width: 200%;
+  padding: 10px 10px;
+}
+/*=========================HomePage==========================*/
+.hero {
+  background-image: url(assets/img/hero.jpg);
+background-position:30%;
+  height: 600px;
+}
+.homeOffers{
+ 
+  display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ align-items: center;
+}
+
+/*========================Offers==============================*/
+.offerPage {
+  background-color: rgb(204, 204, 204);
+  height: 1500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.imgOffer {
+  width: 30%;
+  height: 60%;
+  background-color: #fff;
+}
+.offerDetails {
+  width: 30%;
+  height: 60%;
+  background-color: white;
+  font-size: 220%;
+}
