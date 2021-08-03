@@ -26,7 +26,7 @@ function App() {
 
   return (
     <Router>
-      <Nav userToken={tokenUser} setUser={setUser} />
+      <Nav tokenUser={tokenUser} setUser={setUser} />
       <Switch>
         <Route path="/offers/:id">
           <Offers />

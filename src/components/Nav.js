@@ -18,7 +18,7 @@ const Nav = ({ tokenUser, setUser }) => {
         <Connect tokenUser={tokenUser} setUser={setUser} />
       </div>
       <div>
-        <button>Vends maintenant</button>
+        <button className="sell">Vends maintenant</button>
       </div>
     </div>
   );

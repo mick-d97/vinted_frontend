@@ -17,23 +17,22 @@
   width: 50vh;
   padding: 10px 10px;
 }
-.buttonConnect{
+.buttonConnect {
   width: 30vh;
-display: flex;
+  display: flex;
   justify-content: space-evenly;
 }
 /*=========================HomePage==========================*/
 .hero {
   background-image: url(assets/img/hero.jpg);
-background-position:30%;
+  background-position: 30%;
   height: 600px;
 }
-.homeOffers{
- 
+.homeOffers {
   display: flex;
- flex-wrap: wrap;
- justify-content: space-evenly;
- align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /*========================Offers==============================*/
@@ -55,41 +54,76 @@ background-position:30%;
   background-color: white;
   font-size: 220%;
 }
-.offers{
+.offers {
   display: flex;
   overflow-x: scroll;
 }
-.homeOffers div>img{
+.homeOffers div > img {
   width: 40vh;
   margin-bottom: 10%;
   margin-top: 10%;
 }
-.homeOffers{
+.homeOffers {
   margin-top: 10%;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
 }
-h3{
+h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 2%;
   color: black;
 }
-.homeOffers div>p{
+.homeOffers div > p {
   font-size: 150%;
   color: rgb(20, 167, 167);
 }
 /*=======================SignUp==SignIn=========================*/
-.signUpForm, .signInForm{
+.signUpForm,
+.signInForm {
   display: flex;
- justify-content: center;
-margin-top: 20%;
+  justify-content: center;
+  margin-top: 20%;
 }
-.signUpForm div>input, .signInForm div > input{
+.signUpForm div > input,
+.signInForm div > input {
   width: 50vh;
   height: 5vh;
   margin-bottom: 3vh;
-  border:transparent;
+  border: transparent;
   border-bottom: 1px solid rgb(231, 195, 195);
+}
+/*=============Media=Queries==========*/
+@media (min-width: 1024px) and (max-width: 2180px) {
+  .search {
+    width: 10vh;
+  }
+}
+@media (min-width: 1440px) {
+  .search {
+    width: 5vh;
+  }
+}
+@media (max-width: 768px) {
+  .search,
+  .buttonConnect,
+  .sell {
+    display: none;
+    
+  }
+}
+@media (max-width: 2500px) {
+  .search
+  {
+    width: 10vh;
+    
+  }
+}
+@media (max-width: 768px) {
+  .search
+  {
+    display: block;
+    
+  }
 }

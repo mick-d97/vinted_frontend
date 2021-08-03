@@ -29,7 +29,7 @@ const SignUp = ({ setUser }) => {
           
           history.push("/"); //redirection de l'utilisateur
         }
-        
+        console.log(response);
       } catch (error) {
         
         console.log(error.response);

@@ -12,7 +12,9 @@ const Connect = ({ tokenUser, setUser }) => {
       <div>
       <button><Link to="/signup">S'inscrire</Link></button>
       </div>
-     
+     <div>
+         
+     </div>
     </div>
     </>
   );
