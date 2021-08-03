@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+
 const Home = () => {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -31,9 +33,9 @@ const Home = () => {
       <div className="homeOffers">
       {data.offers.map((offer, index) => {
         return (
-          <Link to={`/offers/${offer.id}`} >
+          <Link to={`/offers/${offer._id}`} >
             
-            <div  key={offer.id}>
+            <div  key={offer._id}>
               <h3> {offer.product_details[0].MARQUE} </h3>
               <p> {offer.product_details[1].TAILLE} </p>
               <p>{offer.product_price} €</p>

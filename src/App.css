@@ -14,8 +14,13 @@
   width: 100px;
 }
 .search > input {
-  width: 200%;
+  width: 50vh;
   padding: 10px 10px;
+}
+.buttonConnect{
+  width: 30vh;
+display: flex;
+  justify-content: space-evenly;
 }
 /*=========================HomePage==========================*/
 .hero {
@@ -49,4 +54,42 @@ background-position:30%;
   height: 60%;
   background-color: white;
   font-size: 220%;
+}
+.offers{
+  display: flex;
+  overflow-x: scroll;
+}
+.homeOffers div>img{
+  width: 40vh;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.homeOffers{
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 2%;
+  color: black;
+}
+.homeOffers div>p{
+  font-size: 150%;
+  color: rgb(20, 167, 167);
+}
+/*=======================SignUp==SignIn=========================*/
+.signUpForm, .signInForm{
+  display: flex;
+ justify-content: center;
+margin-top: 20%;
+}
+.signUpForm div>input, .signInForm div > input{
+  width: 50vh;
+  height: 5vh;
+  margin-bottom: 3vh;
+  border:transparent;
+  border-bottom: 1px solid rgb(231, 195, 195);
 }

@@ -1,26 +1,24 @@
 import logo from "../assets/img/logo.png";
+import Connect from "./connect";
 
-const Nav = () => {
-  return (
+const Nav = ({ tokenUser, setUser }) => {
+  console.log(tokenUser);
+  return tokenUser ? (
+    <button onClick={() => setUser(null)}>Se déconnecter</button>
+  ) : (
     <div className="nav">
       <div className="logo">
-        <img src={logo} alt="Vinted"/>
+        <img src={logo} alt="Vinted" />
       </div>
       <div className="search">
-        {" "}
-        <input type="text" />{" "}
+        <input type="text" />
+      </div>
+      
+      <div>
+        <Connect tokenUser={tokenUser} setUser={setUser} />
       </div>
       <div>
-        {" "}
-        <button>S'inscrire</button>{" "}
-      </div>
-      <div>
-        {" "}
-        <button> Se connecter</button>{" "}
-      </div>
-      <div>
-        {" "}
-        <button>Vends maintenant</button>{" "}
+        <button>Vends maintenant</button>
       </div>
     </div>
   );
